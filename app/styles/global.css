@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #181820;
-    --secondary-color: #21212b;
+    --primary-color: #000000;
+    --secondary-color: #1c1c1c;
     --accent-color: #fc76a1;
     --gray-color: rgb(209 213 219);
 
@@ -89,7 +89,7 @@ object {
 ::after {
     border-width: 0;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(255, 255, 255);
 }
 
 /* Global Styles */
