@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css';
 
 
 const Home = () => {
-    const { initialized, loading, transactionPending, completedTodos, incompleteTodos, addTodo, markTodo, removeTodo, input,  handleChange, initializeUser } = useTodo()
+    const { initialized, loading, transactionPending, incompleteTodos, addTodo, input,  handleChange, initializeUser } = useTodo()
 
 
     return (
@@ -14,10 +14,9 @@ const Home = () => {
             <div className={styles.actionsContainer}>
                 {initialized ? (
                     <div className={styles.todoInput}>
-                        {/* <div className={`${styles.todoCheckbox} ${styles.checked}`} /> */}
                         <div className={styles.inputContainer}>
                             <form onSubmit={addTodo}>
-                                <input value = {input} onChange={handleChange} id={styles.inputField} type="text" placeholder='Create a new todo...' />
+                                <input value = {input} onChange={handleChange} id={styles.inputField} type="text" placeholder='Write your newest Victim' />
                             </form>
                         </div>
                         <div className={styles.iconContainer}>
@@ -35,9 +34,7 @@ const Home = () => {
 
             <div className={styles.mainContainer}>
                 <Loading loading={loading}>
-                    <TodoSection title="Diary" todos={incompleteTodos} action={removeTodo} />
-
-                    {/* <TodoSection title="Completed" todos={completedTodos} action={removeTodo} /> */}
+                    <TodoSection title="Victims" todos={incompleteTodos}/>
                 </Loading>
             </div>
         </div>

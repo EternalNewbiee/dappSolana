@@ -1,4 +1,4 @@
-/* Home Page */
+
 .button {
     background-color: var(--accent-color);
     color: var(--primary-color);
@@ -19,14 +19,12 @@
     margin: 2rem auto;
     padding: 1rem;
     width: 850px;
-    /* margin-top: 50px; */
 }
 
 .actionsContainer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
-    /* gap: 20px */
 }
 
 .todoInput {

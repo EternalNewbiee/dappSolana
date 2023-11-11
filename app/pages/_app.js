@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
     return (
         <>
             <Head>
-                <title>Todo App</title>
+                <title>Death Note</title>
             </Head>
             <main>
                 <WalletConnectProvider>
